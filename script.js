@@ -131,4 +131,15 @@ document.addEventListener('DOMContentLoaded', () => {
         control.parentNode.insertBefore(icon, control.nextSibling);
     });
 
+    L.control.locate({
+        position: 'topleft',
+        strings: {
+            title: "Mostrar mi ubicación"
+        },
+        locateOptions: {
+            maxZoom: 16,
+            enableHighAccuracy: true
+        }
+    }).addTo(map);
+
 });
