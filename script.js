@@ -21,31 +21,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Iconos 
     const vinoIcon = L.icon({
-        iconUrl: "/popup/Bodegas.png",
+        iconUrl: "popup/Bodegas.png",
         iconSize: [32, 32],
         iconAnchor: [16, 32]
     });
 
     const olivoIcon = L.icon({
-        iconUrl: "/popup/Aceiteras.png",
+        iconUrl: "popup/Aceiteras.png",
         iconSize: [32, 32],
         iconAnchor: [16, 32]
     });
 
     const alojamientoIcon = L.icon({
-        iconUrl: '/popup/Alojamiento.png',
+        iconUrl: 'popup/Alojamiento.png',
         iconSize: [32, 32],
         iconAnchor: [16, 32]
     });
 
     const gastronomiaIcon = L.icon({
-        iconUrl: '/popup/Gastronomia.png',
+        iconUrl: 'popup/Gastronomia.png',
         iconSize: [32, 32],
         iconAnchor: [16, 32]
     });
 
     const AgenciaIcon = L.icon({
-        iconUrl: '/popup/AgenciadeViajes.png',
+        iconUrl: 'popup/AgenciadeViajes.png',
         iconSize: [32, 32],
         iconAnchor: [16, 32]
     });
