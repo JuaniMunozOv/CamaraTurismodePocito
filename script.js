@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { nombre: "La 14 Gourmet", coords: [-31.6905886, -68.5859846], descripcion: "Teléfono: <a href='tel:2644624777'>2644624777</a><br>Instagram: <a href='https://www.instagram.com/la14gourmet/?hl=es'>@la14gourmet</a>" },
         { nombre: "La Salmuera", coords: [-31.5957119, -68.6041221], descripcion: "Teléfono: <a href='tel:2644988604'>2644988604</a><br>Instagram: <a href='https://www.instagram.com/lasalmuerasanjuan/?hl=es'>@lasalmuerasanjuan</a>" },
         { nombre: "Tierras Negras", coords: [-31.6648729, -68.5404433], descripcion: "Teléfono: <a href='tel:+54 9 264 5656584 / +54 9 264 4890263'>+54 9 264 5656584 / +54 9 264 4890263</a><br>Instagram: <a href='https://www.instagram.com/tneventosyresto/'>@tneventosyresto</a>" },
-        { nombre: "Del Parque Heladería y Confitería", coords: [-31.6584155, -68.5789342], descripcion: "Teléfono: <a href='tel:2646716329'>2646716329</a><br>Descripción del restaurante." }
+        { nombre: "Del Parque Heladería y Confitería", coords: [-31.6584155, -68.5789342], descripcion: "Teléfono: <a href='tel:2646716329'>2646716329</a>" }
     ];
 
     const bodegas = [
