@@ -1,0 +1,152 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+#slider {
+    width: 100%;
+    height: 300px;
+    /* Adjust the height as needed */
+    overflow: hidden;
+    display: flex;
+}
+
+#slider img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.logo-bar {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    width: calc(100% * 2);
+    /* Ajustar para el doble de logos */
+    animation: scroll 50s linear infinite;
+    /* Ajustar duración si es necesario */
+}
+
+.logo-container img {
+    max-width: 100px;
+    margin: 10px;
+    height: auto;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-300%);
+        /* Mover solo la mitad para desplazamiento continuo */
+    }
+}
+
+
+
+#map {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+}
+
+#info {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    /* Ajusta el color de fondo a tu preferencia */
+    padding: 10px;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left,
+.footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.footer-left a {
+    margin-right: 10px;
+    /* Espaciado entre los iconos de correo e Instagram */
+}
+
+.footer-separator {
+    height: 50px;
+    /* Ajusta la altura según sea necesario */
+    width: 1px;
+    background-color: rgb(107, 107, 107);
+    /* Ajusta el color de la barra lateral */
+}
+
+.footer-logo-img {
+    height: 100px;
+    /* Ajusta el tamaño de la imagen según tus necesidades */
+    width: auto;
+    /* Mantiene la proporción de la imagen */
+}
+
+
+footer a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+footer img {
+    height: 27px;
+    /* Ajusta el tamaño de las imágenes de correo e Instagram */
+    width: 27px;
+    /* Ajusta el tamaño de las imágenes de correo e Instagram */
+}
+
+
+
+@media (max-width: 768px) {
+    #map {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    h1,
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .footer-links a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    #slider img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        display: none;
+    }
+}
