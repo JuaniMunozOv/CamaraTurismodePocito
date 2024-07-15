@@ -141,12 +141,3 @@ footer img {
         margin: 10px 0;
     }
 }
-
-@media (min-width: 1024px) {
-    #slider img {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-        display: none;
-    }
-}
