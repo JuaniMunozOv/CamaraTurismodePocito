@@ -21,31 +21,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Iconos 
     const vinoIcon = L.icon({
-        iconUrl: "popup/Bodegas.png",
+        iconUrl: "/popup/Bodegas.png",
         iconSize: [32, 32],
         iconAnchor: [16, 32]
     });
 
     const olivoIcon = L.icon({
-        iconUrl: "popup/Aceiteras.png",
+        iconUrl: "/popup/Aceiteras.png",
         iconSize: [32, 32],
         iconAnchor: [16, 32]
     });
 
     const alojamientoIcon = L.icon({
-        iconUrl: 'popup/Alojamiento.png',
+        iconUrl: '/popup/Alojamiento.png',
         iconSize: [32, 32],
         iconAnchor: [16, 32]
     });
 
     const gastronomiaIcon = L.icon({
-        iconUrl: 'popup/Gastronomia.png',
+        iconUrl: '/popup/Gastronomia.png',
         iconSize: [32, 32],
         iconAnchor: [16, 32]
     });
 
-    const AgenciaIcon = L.icon({
-        iconUrl: 'popup/AgenciadeViajes.png',
+    const actividadesIcon = L.icon({
+        iconUrl: '/popup/AgenciadeViajes.png',
         iconSize: [32, 32],
         iconAnchor: [16, 32]
     });
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { nombre: "La 14 Gourmet", coords: [-31.6905886, -68.5859846], descripcion: "Teléfono: <a href='tel:2644624777'>2644624777</a><br>Instagram: <a href='https://www.instagram.com/la14gourmet/?hl=es'>@la14gourmet</a>" },
         { nombre: "La Salmuera", coords: [-31.5957119, -68.6041221], descripcion: "Teléfono: <a href='tel:2644988604'>2644988604</a><br>Instagram: <a href='https://www.instagram.com/lasalmuerasanjuan/?hl=es'>@lasalmuerasanjuan</a>" },
         { nombre: "Tierras Negras", coords: [-31.6648729, -68.5404433], descripcion: "Teléfono: <a href='tel:+54 9 264 5656584 / +54 9 264 4890263'>+54 9 264 5656584 / +54 9 264 4890263</a><br>Instagram: <a href='https://www.instagram.com/tneventosyresto/'>@tneventosyresto</a>" },
-        { nombre: "Del Parque Heladería y Confitería", coords: [-31.6584155, -68.5789342], descripcion: "Teléfono: <a href='tel:2646716329'>2646716329</a>" }
+        { nombre: "Del Parque Heladería y Confitería", coords: [-31.6584155, -68.5789342], descripcion: "Teléfono: <a href='tel:2646716329'>2646716329</a><br>Descripción del restaurante." }
     ];
 
     const bodegas = [
@@ -81,8 +81,10 @@ document.addEventListener('DOMContentLoaded', () => {
         { nombre: "Casona del Cerro", coords: [-31.6476277, -68.6100204], descripcion: "Teléfono: <a href='tel:2645041720'>2645041720</a><br>Instagram: <a href='https://www.instagram.com/casonas_del_cerro/?hl=es'>@casonas_del_cerro</a>" }
     ];
 
-    const agencias = [
-        { nombre: "Elisan y Compañia Viajes", coords: [-31.6628729, -68.5404433], descripcion: "Teléfono: <a href='tel:264154106300'>264154106300</a>" }
+    const actividades = [
+        { nombre: "Elisan y Compañia Viajes", coords: [-31.6628729, -68.5404433], descripcion: "Teléfono: <a href='tel:264154106300'>264154106300</a>" },
+        { nombre: "Aeroclub San Juan", coords: [-31.6100000, -68.5470100], descripcion: "Teléfono: <a href='tel:2644240219'>2644240219</a><br>Instagram: <a href='https://www.instagram.com/aeroclubsanjuan/?hl=es'>@aeroclubsanjuan</a>" }
+
     ];
 
 
@@ -99,14 +101,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const capaBodegas = L.layerGroup(addPointsWithPopupImage(bodegas, vinoIcon));
     const capaAceiteras = L.layerGroup(addPointsWithPopupImage(aceiteras, olivoIcon));
     const capaAlojamientos = L.layerGroup(addPointsWithPopupImage(alojamientos, alojamientoIcon));
-    const capaAgencias = L.layerGroup(addPointsWithPopupImage(agencias, AgenciaIcon));
+    const capaActividades = L.layerGroup(addPointsWithPopupImage(actividades, actividadesIcon));
 
     // Agregar las capas al mapa por defecto
     capaGastronomia.addTo(map);
     capaBodegas.addTo(map);
     capaAceiteras.addTo(map);
     capaAlojamientos.addTo(map);
-    capaAgencias.addTo(map);
+    capaActividades.addTo(map);
 
     // Agregar control de capas
     L.control.layers(null, {
@@ -114,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'Bodegas': capaBodegas,
         'Aceiteras': capaAceiteras,
         'Alojamientos': capaAlojamientos,
-        'Agencias de Viajes': capaAgencias
+        'Actividades': capaActividades
     }, { collapsed: true }).addTo(map);
 
     // Agregar iconos a las capas del control
@@ -125,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
             index === 1 ? vinoIcon.options.iconUrl :
                 index === 2 ? olivoIcon.options.iconUrl :
                     index === 3 ? alojamientoIcon.options.iconUrl :
-                        AgenciaIcon.options.iconUrl;
+                        actividadesIcon.options.iconUrl;
         icon.style.width = '16px';
         icon.style.height = '16px';
         control.parentNode.insertBefore(icon, control.nextSibling);
