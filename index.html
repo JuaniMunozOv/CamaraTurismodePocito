@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-groupedlayercontrol/0.6.0/leaflet.groupedlayercontrol.min.css" />
+    <link rel="preload" as="image" href="https://b.tile.openstreetmap.org/11/633/1213.png">
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-groupedlayercontrol/0.6.0/leaflet.groupedlayercontrol.min.js"></script>
@@ -17,14 +18,14 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
     <script src="https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.js"></script>
     <link rel="icon" href="imagenes/CamaraLOGO.png" type="image/png">
-
 </head>
+
 
 <body>
     <div id="slider">
-        <img src="/imagenes/DescubriPocito.png" alt="Image 1">
-        <img src="/imagenes/IMG_4207.png" alt="Image 2">
-        <img src="/imagenes/VieñosdePocito.jpg" alt="Image 3">
+        <img src="imagenes/DescubriPocito.avif" loading="lazy" alt="Image 1">
+        <img src="imagenes/IMG_4207.avif" loading="lazy" alt="Image 2">
+        <img src="imagenes/VinasdePocito.avif" loading="lazy" alt="Image 3">
     </div>
 
     <div class="logo-bar">
@@ -130,7 +131,7 @@
     </footer>
 
 
-    <script src="script.js"></script>
+    <script src="script.js" async></script>
 </body>
 
 </html>
