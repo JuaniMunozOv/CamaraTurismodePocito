@@ -23,8 +23,11 @@
 }
 
 .navbar {
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
     z-index: 1000;
+    /* Ajuste para asegurar que el menú esté sobre otros elementos */
 }
 
 nav {
@@ -101,6 +104,8 @@ nav {
     transition: max-height 0.3s ease-in-out;
     background-color: var(--nav-background);
     width: 100%;
+    z-index: 999;
+    /* Ajuste para asegurar que los submenús estén sobre otros elementos */
 }
 
 .navigation>li:hover .subnavigation__wrapper {
