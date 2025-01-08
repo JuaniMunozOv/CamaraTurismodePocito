@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
             nombre: "El Rosario",
             coords: [-31.6898651, -68.5906105],
             descripcion:
-                "Teléfono: <a href='tel: 2644773612'>2644773612</a><br></a>",
+                "Teléfono: <a href='tel: 2644773612'>2644773612</a><br><br>Instagram: <a href='https://www.instagram.com/elrosario.hospedaje/?hl=es'>@elrosario.hospedaje</a>",
         },
         {
             nombre: "Viñas de Segisa",
