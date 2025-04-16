@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
             nombre: "El Rosario",
             coords: [-31.6898651, -68.5906105],
             descripcion:
-                "Teléfono: <a href='tel: 2644773612'>2644773612</a><br><br>Instagram: <a href='https://www.instagram.com/elrosario.hospedaje/?hl=es'>@elrosario.hospedaje</a>",
+                "Teléfono: <a href='tel: 2644773612'>2644773612</a><br></a>",
         },
         {
             nombre: "Viñas de Segisa",
@@ -166,6 +166,12 @@ document.addEventListener("DOMContentLoaded", () => {
             coords: [-31.6859466, -68.5662414],
             descripcion:
                 "Teléfono: <a href='tel:2644145701'>2644145701</a><br>Instagram: <a href='https://www.instagram.com/quintalapintada/?hl=es'>@quintalapintada</a>",
+        },
+        {
+            nombre: "Finca La colito",
+            coords: [-31.6839855, -68.5479364],
+            descripcion:
+                "Teléfono: <a href='tel:2645118965'>02645118965</a><br>Instagram: <a href='https://www.instagram.com/finca.lacolito/'>@finca.lacolito</a>",
         },
         {
             nombre: "Casona del Cerro",
